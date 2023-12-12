@@ -1,0 +1,51 @@
+.bg-area{
+    background: #111111;
+    padding: 80px 0;
+}
+.title-1{
+    color: #fff;
+    position: relative;
+    font-weight: 600;
+    letter-spacing: .7px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0 0 10px 37px;
+    font-family: "Poppins",sans-serif;
+}
+
+.title-1:before{
+    content: '';
+    position: absolute;
+    top: 11px;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background: #08fdd8;
+}
+
+.title h1{
+    color: #08fdd8;
+    letter-spacing: .7px;
+    font-family: "Poppins",sans-serif;
+    text-shadow: 1px 1px 20px rgb(38 62 53);
+}
+.about-text{
+    color: white;
+}
+.about-text tbody{
+    color: white !important;
+}
+.about-area .main-btn{
+    padding: 12px 35px !important;
+}
+.main-btn-2{
+    font-size: 16px !important;
+    border-radius: 50px !important;
+    margin-left: .75rem;
+}
+.mine-img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}

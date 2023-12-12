@@ -1,0 +1,224 @@
+header{
+    background:url('../../images/home-bg.jpg') ;
+    background: #151515 url('../../images/home-bg.jpg') no-repeat center bottom;
+	background-size: cover;
+    background-attachment: fixed;
+	width: 100%;
+	min-height: 700px;
+	position: relative;
+    z-index: 10;
+    color: wheat;
+    display: block;
+    overflow: hidden;
+}
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #111111;
+	opacity: .8;
+    z-index: -1;
+}
+.header-content{
+    margin-top: 130px;
+    /* min-height: 80vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.header-content h1 {
+	color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 4.2rem;
+    font-weight: 700;
+    text-shadow: 0 0 20px rgb(0 0 0 / 50%);
+    margin: 10px 0;
+}
+.header-content h4{
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 0 0 20px rgb(0 0 0 / 50%);
+    color: #fff;
+    font-size: 1.2rem;
+}
+.header-content h3{
+    color: #08fdd8;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 1px 1px 20px rgb(38 62 53);
+    letter-spacing: .2rem;
+}
+.header-content .button {
+    display: inline-block;
+    text-decoration: none;
+	color: #FFFFFF;
+	border: 3px solid rgba(255, 255, 255, 0.3);
+	padding: 0.8rem 1.2rem ;
+	font-size: 1rem;
+	text-transform: uppercase;
+	letter-spacing: .25rem;
+    margin: 30px 0 0;
+}
+.header-content .button:hover {
+    border-color: #08fdd8;
+}
+.header-content .button:focus{
+    border-color: #08fdd8;
+    color: #08fdd8;
+}
+.down-icon{
+    font-size: 12px;
+}
+.wave {
+    animation-name: wave-animation;
+    animation-duration: 2.1s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 24px;
+  }
+  
+  @keyframes wave-animation {
+
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(14deg);
+    }
+    20% {
+      transform: rotate(-8deg);
+    }
+    30% {
+      transform: rotate(14deg);
+    }
+    40% {
+      transform: rotate(-4deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    60% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+.header-social li {
+	display: inline-block;
+	margin: 0 16px;
+	padding: 0;
+}
+.header-social {
+    margin-top: 100px;
+}
+.header-social a{
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+}
+.header-social a:hover,
+.header-social a:focus{
+    color: #08fdd8;
+}
+
+/* navbar */
+.navbar {
+    background-color: #141414 !important;
+}
+.nav-link{
+    font-family: 'Poppins', sans-serif;
+    color: #fff !important;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    border-bottom: 2px solid transparent;
+    transition: .3s;
+    width: fit-content;
+}
+.nav-link:hover,
+.nav-link:focus{
+   color: #08fdd8 !important;
+   border-bottom: 2px solid #08fdd8;
+}
+.main-btn{
+    border-bottom: none;
+    background:#08fdd8 ;
+    color: #1d1d1d !important;
+    padding: 10px 20px !important;
+    border-radius: 5px;
+    box-shadow: 0 0 7px 1px #08fdd8d9;
+    font-weight: 500;
+    transition: .4s;
+    text-decoration: none;
+    display: inline-block;
+}
+.main-btn:hover{
+    border-bottom: none;
+    background:#fff ;
+    color: #1d1d1d !important;
+    text-decoration: none;
+}
+.navbar .main-btn:focus{
+    border: none;
+    color: #1d1d1d !important;
+}
+.navbar-brand{
+    color: #08fdd8 !important;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 1px 1px 20px rgb(38 62 53);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+.bars{
+    color: white;
+    font-size: 28px;
+}
+.bars:hover,
+.bars:active,
+.bars:focus{
+    color: #08fdd8;
+}
+.navbar-nav{
+   align-items:  center;
+}
+
+@media only screen and (max-width: 999px) {
+    .header-content h1 {
+        font-size: 3.5rem;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .header-content h1 {
+        font-size: 3rem;
+    }
+    .header-content h3 {
+        font-size: 1.5rem;
+    }
+  }
+  @media only screen and (max-width: 549px) {
+    .header-content h1 {
+        font-size: 2.5rem;
+    }
+    .header-content h3 {
+        font-size: 1.4rem;
+    }
+    .header-content .button{
+        padding: 0.6rem 1rem;
+        font-size: .8rem;
+    }
+  }
+  .Typewriter {
+    display: inline-block;
+}
